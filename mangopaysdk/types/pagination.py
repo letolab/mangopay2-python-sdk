@@ -22,4 +22,3 @@ class Pagination():
         self.ItemsPerPage = itemsPerPage
         self.TotalPages = None
         self.TotalItems = None
-
