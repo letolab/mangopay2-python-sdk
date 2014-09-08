@@ -14,6 +14,8 @@ class PayIn (Transaction):
         # One of PayInExecutionDetails implementations, depending on ExecutionType
         self.ExecutionDetails = None
         # Required for 3D Secure
+        # Fetch ResultStatus from Mangopay API
+        self.ResultMessage = None
         self.SecureModeNeeded = None
         self.SecureModeRedirectURL = None
         return super(PayIn, self).__init__(id)
